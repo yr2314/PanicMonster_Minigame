@@ -1,6 +1,11 @@
 <goal>
 
   <p>goal.tag</p>
+  <div class="">
+    <label>input your goals</label>
+    <input type="text" name="" value="" placeholder="type in your goal">
+
+  </div>
 
   <script>
     console.log("test");
