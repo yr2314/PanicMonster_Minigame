@@ -1,13 +1,11 @@
 <app>
 
-  <p>app.tag</p>
+  <p>My goal is {parrent.currentGoal}</p>
 
   <timer></timer>
 
   <script>
     console.log("test");
-    this.imageURL = "http://placehold.it/100x100";
-    this.cardText = "My card";
   </script>
 
   <style>
