@@ -1,6 +1,5 @@
 <timer>
 
-    <p>timer.tag</p>
     <p>{ time } Days Left</p>
     <img show={ panicMonster } src="media/PM.jpg">
 
@@ -28,10 +27,13 @@
     <style>
         :scope {
             display: inline-block;
-            border: 1px solid #CCC;
-            width: 100px;
+            /*width: 100px;*/
             padding: 15px;
-            color: blue;
+            color: red;
+        }
+
+        img {
+          width: 300px;
         }
 
     </style>

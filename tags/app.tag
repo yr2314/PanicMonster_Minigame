@@ -1,6 +1,6 @@
 <app>
 
-  <p>My goal is {parent.currentGoal}</p>
+  <p id="goal">My goal is {parent.currentGoal}</p>
 
   <timer></timer>
 <br>
@@ -86,13 +86,31 @@
   <style>
     :scope {
       display: inline-block;
-      border: 1px solid #CCC;
       width: 700px;
       padding: 15px;
-      color: blue;
+      text-align: center;
     }
     img {
       width: 400px;
     }
+    #goal {
+      color: green;
+      font-weight: bold;
+    }
+
+    td {
+      width: 50%;
+      padding-top: 10px;
+    }
+
+    table {
+      padding-top: 20px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+
   </style>
 </app>
