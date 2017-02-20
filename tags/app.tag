@@ -1,6 +1,6 @@
 <app>
 
-  <p>app.tag</p>
+  <p>My goal is {parent.currentGoal}</p>
 
   <timer></timer>
 <br>
