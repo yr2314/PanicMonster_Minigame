@@ -3,10 +3,10 @@
       <p>{ time } Days Left</p>
       <img src="http://www.clipartbest.com/cliparts/Kij/g66/Kijg66ekT.gif" id="clock">
     </div>
-    <img show={ panicMonster } src="media/PM.jpg" id="panicMonster">
+    <img show={ panicMonster } src="media/PM.gif" id="panicMonster">
 
     <script>
-        this.time = 100;
+        this.time = 21;
         this.panicMonster = false;
         tick() {
           if(this.time <= 100 && this.time>0){
