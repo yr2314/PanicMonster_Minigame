@@ -6,7 +6,7 @@
     <img show={ panicMonster } src="media/PM.gif" id="panicMonster">
 
     <script>
-        this.time = 21;
+        this.time = 100;
         this.panicMonster = false;
         tick() {
           if(this.time <= 100 && this.time>0){
