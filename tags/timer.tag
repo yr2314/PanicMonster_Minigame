@@ -1,7 +1,9 @@
 <timer>
-
-    <p>{ time } Days Left</p>
-    <img show={ panicMonster } src="media/PM.jpg">
+    <div class="timer">
+      <p>{ time } Days Left</p>
+      <img src="http://www.clipartbest.com/cliparts/Kij/g66/Kijg66ekT.gif" id="clock">
+    </div>
+    <img show={ panicMonster } src="media/PM.jpg" id="panicMonster">
 
     <script>
         this.time = 100;
@@ -27,13 +29,21 @@
     <style>
         :scope {
             display: inline-block;
-            /*width: 100px;*/
             padding: 15px;
-            color: red;
+            color: #5A5050;
+            float: right;
         }
+        #clock {
+            width: 50px;
+        }
+        .timer {
+            border: dotted 2px;
+            border-radius: 40px;
+            padding: 10px;
 
-        img {
-          width: 300px;
+        }
+        #panicMonster {
+            width: 150px;
         }
 
     </style>
