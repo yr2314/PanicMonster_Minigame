@@ -21,11 +21,11 @@
 <button type="button" onclick={ sendLanternData }>Save Lantern</button>
 
   <script>
-    // var newLantern = {
-    //   goal: "",
-    //   deadline: "",
-    //   tasks: []
-    // };
+    var newLantern = {
+      goal: "",
+      deadline: "",
+      tasks: []
+    };
     // console.log (this.newLantern);
 
     // var that = this;
@@ -38,8 +38,8 @@
         this.taskList.push(newTask);
         event.target.value = "";
         event.target.focus();
-        // console.log(this.taskList);
       }
+
     }
 
     // for (var i = 0; i < taskList.length; i++) {
@@ -47,16 +47,9 @@
     // }
 
     this.sendLanternData = function(event){
-      // var taskValue = that.taskList
-      var newLantern = {
-        goal: this.refs.goalInput.value,
-        deadline: this.refs.deadlineInput.value,
-        task: [this.taskList]
-      };
-      newLantern.goal = this.refs.goalInput.value,
-      newLantern.deadline = this.refs.deadlineInput.value,
-
-      console.log(this.newLantern);
+      newLantern.task=this.taskList;
+      newLantern.goal = this.refs.goalInput.value;
+      newLantern.deadline = this.refs.deadlineInput.value;
       this.parent.lanternList.push(newLantern);
       this.parent.showCreator = false;
       this.parent.update();
