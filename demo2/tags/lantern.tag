@@ -2,9 +2,9 @@
 
 <p>Goal: { goal }</p>
 <p>Deadline: { deadline } days away</p>
-<ul>
-  Task List:
-  { tasks }
+<p>Task List:</p>
+<ul each={task}>
+ <input type="checkbox" checked={ done }>{task} </input>
 </ul>
 
 
