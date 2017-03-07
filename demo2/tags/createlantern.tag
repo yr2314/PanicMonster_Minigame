@@ -8,9 +8,7 @@
 </div>
 
 <div>
-  <ul>
     <listitem ref="itemInput" each={ taskList }></listitem>
-  </ul>
 </div>
 
 <div class="form-group">
@@ -18,7 +16,7 @@
 </div>
 
 
-<button type="button" onclick={ sendLanternData }>Save Lantern</button>
+<button class="btn btn-primary" type="button" onclick={ sendLanternData }>Save Lantern</button>
 
   <script>
     var newLantern = {

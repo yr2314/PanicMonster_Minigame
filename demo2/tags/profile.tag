@@ -5,7 +5,7 @@
   <br>
   <br>
 
-  <button onclick={ createLantern } type="button" name="button">create lantern</button>
+  <button class="btn btn-primary" onclick={ createLantern } type="button" name="button">create lantern</button>
 
   <br>
 
